@@ -7,3 +7,4 @@ def softmax(L):
 	for i in expL:
 		result.append(i*1.0 /sumExpL)
 	return result
+

@@ -33,3 +33,4 @@ def trainPerceptronAlgorithm(X, y, learn_rate=0.01, num_epochs=25)
 		W, b = perceptronStep(X, y, W, b, learn_rate)
 		boundary_lines.append((-W[0]/W[1], -b/W[1]))
 	return boundary_lines
+
