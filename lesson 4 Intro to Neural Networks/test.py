@@ -31,7 +31,8 @@ for e in range(epochs):
         # TODO: Calculate the output
         hidden_input = np.dot(x, weights_input_hidden)
         hidden_output = sigmoid(hidden_input)
-        output = sigmoid(np.dot(hidden_input, weights_hidden_output))
+
+        output = sigmoid(np.dot(hidden_output, weights_hidden_output))
 
         ## Backward pass ##
         # TODO: Calculate the error
