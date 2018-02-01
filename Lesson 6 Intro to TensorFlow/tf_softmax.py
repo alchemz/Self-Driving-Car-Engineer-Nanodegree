@@ -5,8 +5,8 @@ def run():
 	logit_data = [2.0, 1.0, 0.1]
 	logits = tf.placeholder(tf.float32)
 
-	softmax = tf.nn.softmax(logit_data)
+	softmax = tf.nn.softmax(logits)
 
-	with tf.session() as sess:
+	with tf.Session() as sess:
 		output = sess.run(softmax, feed_dict={logits: logit_data})
 	return output
