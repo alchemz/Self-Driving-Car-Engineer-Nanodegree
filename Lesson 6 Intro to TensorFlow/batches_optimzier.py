@@ -1,0 +1,1 @@
+from tensofflow.examples.tutorials.mnist import input_data
