@@ -3,6 +3,8 @@ import tensorflow as tf
 import numpy as np
 from helper import batches
 
+# an epoch is a single forward and backward pass of the whole dataset
+
 def print_epoch_stats(epoch_i, sess, last_features, last_labels):
 	current_cost = sess.run(
 		cost,
