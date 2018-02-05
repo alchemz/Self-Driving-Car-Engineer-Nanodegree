@@ -35,5 +35,6 @@ out_width = ceil(float(in_width - filter_width+1)/float(strides[2])
 
 input = tf.placeholder(tf.float32, (None, 4, 4, 5))
 filter_shape = [1, 2, 2, 1]
-strides = 'VALID'
+strides = [1, 2, 2, 1] #[batch, height, width, depth]
+padding = 'VALID'
 pool = tf.nn.max_pool(input, filter_shape, strides, padding)
